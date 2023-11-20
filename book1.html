@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Book1 - Dr. P.V. Laxmi Prasad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/8347e772e4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+<style>
+    a{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    @media screen and (max-width:700px) {
+				.buttonsmall{
+					margin-top: 18px;
+				}
+			}
+</style>
+<script>
+	var right = document.getElementsByClassName("right");
+    var si = right.length;
+    var z=1;
+    turnRight();
+    function turnRight()
+    {
+        if(si>=1){
+            si--;
+        }
+        else{
+            si=right.length-1;
+            function sttmot(i){
+                setTimeout(function(){right[i].style.zIndex="auto";},300);
+            }
+            for(var i=0;i<right.length;i++){
+                right[i].className="right";
+                sttmot(i);
+                z=1;
+            }
+        }
+        right[si].classList.add("flip");
+        z++;
+        right[si].style.zIndex=z;
+    }
+    function turnLeft()
+    {
+        if(si<right.length){
+            si++;
+        }
+        else{
+            si=1;
+            for(var i=right.length-1;i>0;i--){
+                right[i].classList.add("flip");
+                right[i].style.zIndex=right.length+1-i;
+            }
+        }
+        right[si-1].className="right";
+        setTimeout(function(){right[si-1].style.zIndex="auto";},350);
+    }
+</script>
+
+</head>
+<body>
+
+<!-- NAVBAR START -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <a class="navbar-brand" href="index.html" style="margin-left: 10%;">Dr.P.V.LAXMI PRASAD</a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link navs" href="index.html" style="color: white">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link navs" href=""  style="color: white">About</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link navs" href="writings.html" style="color: white">WRITINGS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link navs" href=""  style="color: white">INTERVIEWS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link navs" href=""  style="color: white">SPEECHES</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link navs" href=""  style="color: white">GALLERY</a>
+    </li>
+    </ul>
+  </div>
+  
+</nav>
+
+<!-- NAVBAR ENDS -->
+
+<!-- BOOK TITLE -->
+<div class="card container d-flex justify-content-center service" style="margin-top: 10px;margin-bottom: 30px;" data-aos="zoom-in">
+  <div class="card-body">
+    <h2 style="font-size:45px;font-weight:bold;font-family:gothicb;">THE POETRY OF T.V.REDDY</h2>
+  </div>
+</div>
+<!-- BOOK TITLE END -->
+
+<!-- BOOK COVER -->
+<div class="container" style="margin-top:10px" data-aos="fade-left">
+  <div class="row">
+    <div class="col-sm-4">
+	  	<div class="book-section">
+        <div class="container">
+            <div class="right">
+                              <!--Book back cover -->
+              <figure class="back" id="back-cover" style="background-image: url('Book images/Book images/Book1/1_page-0003.jpg'); background-size: 175px 300px;"></figure>   
+                               <!--Book contents  -->
+                <figure class="front" title="click to open image" data-toggle="modal" data-target="#myModal" style="cursor:pointer;background-image: url('Book images/Book images/Book1/cont.png'); background-size: 180px auto;background-repeat: no-repeat;">
+                </figure>
+            </div>
+            <div class="right">
+                <figure class="back"  style="background-image: url(''); background-size: cover;background-repeat: no-repeat;"></figure>
+                             <!--Book front cover -->
+                <figure class="front"  style="background-image: url('Book images/Book images/Book1/b1.png'); background-size: 176px 300px;"  id="cover">
+                </figure>
+            </div>
+        </div>
+		</div>
+    <div class="row d-flex justify-content-center buttonsmall" style="margin-top: 20px;">
+      <button class="buttonn" onclick="turnLeft()">Prev Page</button> 
+      <button class="buttonn" onclick="turnRight()">Next Page</button>
+    </div>
+    </div>
+	<div class="col-sm-8">
+      <div class="card service1 row" >
+        <h5 class="d-flex justify-content-center" style="font-family: gothicb;"><b>Description:</b></h5>
+        <p style="text-align:center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        The Poetry of T.V. Reddy is grounded in human struggles and unrest, social as well as psychological and depicts the varied shades of restlessness that is the order of modern times.He protests against
+        <br> the social ills and evils in a gripping way in his absorbing poetry.  	
+        He paints his experiences in a characteristic choice diction and the different images that he has carved out of human life and nature make a deep impression on the minds of the readers and linger there.
+        The poet takes the readers into the soul of India, the villages and rural life which are the backbone of the country—that speaks volumes of his commitment to rural element and makes people come alive in his poetry.
+        T.V. Reddy is not only a poet of highly perceptive temperament but also an accomplished critic and novelist. His awesome ingenious insight into the purpose and meaning of life in a perceptive and intuitive way leads the reader to the invisible force meticulously driving the point that the spiritual region lying within a man offers solace, harmony and consolation par excellence. For Reddy often finds strong affinity in Indian soil and here, rural backdrop inspires him to cultivate niceties of life where rural-oriented background turns out religious for him.
+        </p>
+    	</div>
+    </div>
+  </div>
+</div>
+<!-- BOOK COVER END-->
+
+
+ <!-- Modal -->
+ <div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn btn-info " style=" float: right;" data-dismiss="modal">Close</button>
+      </div>
+      <div class="modal-body">
+        <img src="Book images/Book images/Book1/cont.png" alt="contents" class="img-thumbnail" >
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Modal End-->
+
+
+
+<!--BUY NOW -->
+<div class="container " style="margin-top: 30px;" >
+  <div class="row">
+    <div class="col-md-6 ">
+      <div class="card service1">
+        <div class="card-header ">
+          <h2 style="font-family: gothicb;text-align: center;">About This book</h2>
+        </div>
+        <div class="card-body " style="font-size: 15px;">
+          <p><b>Author:</b> T. Vasudeva Reddy</p>
+          <p><b>Editor:</b> P V Laxmiprasad</p>
+          <p><b>Publisher:</b> Modern History Press (17 March 2018)</p>
+          <p><b>Language:</b> English</p>
+          <p><b>Paperback:</b> 236 pages</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 ">
+      <div class="card service1">
+        <div class="card-header ">
+          <h2 style="font-family: gothicb;text-align: center;">CHECK OUT FROM BELOW</h2>
+        </div>
+        <div class="card-body">
+          <div class="row d-flex justify-content-center">
+            <img src="images/amazon.png" max-width="100%" height="75px">
+            <span style="margin-top: 20px;font-size: 15px; text-align: center;"><a href="https://amzn.eu/d/09Zxp2w" class="buynow " target="_blank" >BUY NOW</a></span>
+           </div>
+           <div class="row d-flex justify-content-center">
+            <img src="images/flipkart.png" max-width="100%" height="75px" >
+            <span style="margin-top:20px;margin-bottom: 60px; font-size: 15px; text-align: center;"><a href="https://www.flipkart.com/poetry-t-v-reddy/p/itmf4hfghedzfcry" class="buynow " target="_blank">BUY NOW</a></span>
+           </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- BUY NOW END -->
+
+<!-- SOCIAL MEDIA -->
+<div class="container-fluid"  style="margin-top: 30px;" data-aos="zoom-in">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row d-flex justify-content-center" >
+        <h2 style="font-family: gothiicb;margin-top: 12px;">FOLLOW US ON</h2>
+       <div class="wrapper">
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span>Twitter</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- SOCIAL MEDIA END -->
+
+<!-- REVIEWS -->
+<div class="container"  style="margin-top: 30px;" data-aos="zoom-in">
+  <div class="row">
+    <div class="col-sm-4">
+		 <div class="card service1">
+		 <div class="card-header">
+      <h2 style="text-align: center; font-family: gothicb;font-size: 20px;">Cick on image for gallery</h2>
+		 </div>
+		 <div class="card-body">
+		 <img id="myImg" class="img-fluid" src="images/msd.jpg" style="width: 100%;">
+		 </div>
+		 </div>
+			<div class="card service1"style="margin-top: 15px;">
+			<div class="card-header">
+				<h3 style="text-align: center; font-family: gothicb;"> Write About This Book</h3>
+			</div>
+			<div class="card-body">
+				<form action="#" class="form-group">
+				   <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name"><br>
+				   <input type="text" class="form-control" id="email" name="email" placeholder="Email"><br>
+				   <input type="text" class="form-control" id="comments" name="comments" placeholder="Comments"><br>
+				  <input type="submit" class="btn btn-primary form-control" value="Submit">
+				</form>
+			</div>
+			</div>
+    </div>
+	
+	<div class="col-sm-8" data-aos="zoom-in">
+	  <div class="card service1">
+	    <div class="card-body">
+			<h2 style="text-align: center; font-family: gothicb;">TESTIMONIALS</h2>
+    <div class="review">
+      <img src="images/dp.png"  style="width:90px">
+      <p><span>Geetika</span></p>
+      <p style="font-family: cursive;">"Indeed,The poetry of TV Reddy is grounded rural life. Farmer is the backbone of the country and the nation' s economy grows with it"</p>
+    </div>
+    <div class="review">
+      <img src="images/dp.png"  style="width:90px">
+      <p><span>	Manish Singh</span></p>
+      <p style="font-family: cursive;">"The poetry of TV Reddy is rooted in rural life. It is a voluminous book. US publisher published this book. Many facets of rural life are found."
+      </p>
+    </div>
+      <div class="review">
+      <img src="images/dp.png"  style="width:90px">
+      <p><span>Devansh badule</span></p>
+      <p style="font-family: cursive;">"Indeed,The poetry of TV Reddy is grounded rural life. Farmer is the backbone of the country and the nation' s economy grows with it"</p>
+    </div>
+		  </div>
+	  </div>
+  </div>
+	
+  </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" style="margin-top: 10px;"   style="margin-top: 50px">  
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-2 ">
+            <img class="footerimg" src=""  alt="Logo" >
+          </div>
+          <div class="col-sm-12 col-md-4 ">
+            <h6 class="d-flex justify-content-center">About</h6>
+            <p class="text-justify"> <b> Dr. P.V. Laxmiprasad</b> is an active academician, an avid researcher, a literary critic, and a resource person. A teacher with two decades of experience, he is the author and editor of 10 published books in English Literature. He is widely published in journals, books and anthologies. His publications speak of his outstanding credentials and long-standing commitment to English literature. Overall, he has 300 publications to his credit. He has passion for music and literature. He is working in the Department of English, Satavahana University, Karimangar, Telanagana, India.</p>
+          </div>
+    
+          <div class="col-xs-6 col-md-2">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">LIFE</a></li>
+              <li><a href="#">INTERVIEWS</a></li>
+              <li><a href="#">SPEECHES</a></li>
+              <li><a href="#">GALLERY</a></li>
+						  <li><a href="#">ARCHIVES</a></li>
+						  <li><a href="#">TRIBUTE</a></li>
+              </ul>
+          </div>
+    
+          <div class="col-xs-6 col-md-2">
+            <h6>WRITINGS</h6>
+            <ul class="footer-links">
+              <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <div class="row">
+              <h6 style="margin-left: 10px;">
+                POWERED BY
+              </h6>
+            </div>
+            <div class="row">
+              <img src="images/telstalogo.jpg" alt="telsta logo" style="max-width: 100%;height: 50px;margin-left: 20px;">
+            </div>
+            <div class="row">
+            <div class="dropdown" style="margin-top: 10px;">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DEVELOPED BY
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item " href="">SASI KARTHIK BEZAWADA </a>
+                <a class="dropdown-item " href="">MD SALMAN SHAIK</a>
+                <a class="dropdown-item " href="">ANUSHA</a>
+                <a class="dropdown-item " href="">SWARUPA DASARI</a>
+                <a class="dropdown-item " href="">lEKHANA ALLU</a>
+                <a class="dropdown-item " href="">RAJESHWARI</a>
+	        			<a class="dropdown-item " href="">SANGHAVI</a>
+                <a class="dropdown-item " href="">NIKITHA</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container-fluid">
+          <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy;All Rights Reserved by 
+                <a href="index.html">Telsta</a>.
+             </p>
+          </div>
+          </div>
+      </div>
+    </footer>
+    <!--FOOTER END -->
+</body>
+
+ <!-- Scroll animation start-->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     duration: 1500,
+     once: true,
+   });
+ </script>
+ <!-- Scroll animation end-->
+
+</html>
