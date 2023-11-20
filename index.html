@@ -1,0 +1,984 @@
+<html>
+	<head>
+		<title>Wearhug-Party Studio</title>
+		<link rel="icon"  href="./images/logo1.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="wearhug.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://kit.fontawesome.com/8347e772e4.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+		<style>
+				a
+				{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		.booknowcall{
+			background:#03e3fc;
+			font-family:Georgia,serif;
+			color:white;
+			display:inline-block;
+			font-size:20px;
+			padding: 0px 20px;
+			border:1px solid #03e3fc;
+			border-radius:50px;
+			margin-top:2px;
+		}
+		.booknowcall:hover{
+			font-family:Georgia,serif;
+			color:#03e3fc;
+			display:inline-block;
+			font-size:20px;
+			padding: 0px 20px;
+			border:1px solid #03e3fc;
+			border-radius:50px;	
+			background:#ffff;
+		}
+		.book-now{
+			font-family:Georgia,serif;
+			color:black;
+			display:inline-block;
+			font-size:20px;
+			padding: 0px 20px;
+			border:1px solid black;
+			border-radius:50px;
+			margin-top:2px;
+			}
+		.book-now:hover{
+			font-family:Georgia,serif;
+			color:white;
+			display:inline-block;
+			font-size:20px;
+			padding: 0px 20px;
+			border:1px solid #03e3fc;
+			border-radius:50px;	
+			background:#03e3fc;
+			}
+			
+			@media screen and (max-width:769px) {
+				.navhide{
+					display:none;
+					border-bottom:2px black;
+				}
+			}
+			@media screen and (min-width:769px) {
+				.navhide1{
+					display:none;
+					justify-content:center;
+				}
+			}
+			@media screen and (max-width:769px) {
+				.navhide2{
+					display:none;
+				}
+			}
+	
+			@media screen and (min-width:768px) {
+				.menubtn{
+					display:none;
+				}
+			}
+			@media screen and (min-width:768px) {
+				.galleryy{
+					display:none;
+				}
+			}
+			@media screen and (min-width:769px) {
+				.welcome{
+					margin-top:170px;
+				}
+			}
+			@media screen and (min-width:760px) {
+				.gallerysmall{
+					display: none;
+				}
+			}
+			@media screen and (max-width:760px) {
+				.gallerybig{
+					display: none;
+				}
+			}
+
+			.searchbox1{
+				height:30px;
+				background: rgb(255, 255, 255);
+				width:140px;
+				border:1px solid rgb(0, 0, 0);
+				border-radius:15px;
+				display: flex;
+				align-items: center;
+			}
+			.searchbox1 input{
+				width:100%;
+				background:transparent;
+				outline:1px black;
+				border:0;
+				}
+		</style>
+	</head>
+	<body style="background: rgb(255, 255, 255);">
+	<!-- Scrolling text-->
+	<marquee class="nav-bg p-2 " direction="left" height="40px" scrollamount="5" style="margin-bottom:2px;">
+		<span>
+			<b class="marquee-text">Offers & Discounts Are Shown Here</b>
+		</span>
+	</marquee>
+
+	<!-- Scrolling text End-->
+	
+	
+	<!-- Navbar Bigscreen-->
+	<nav class="nav-bg navhide" style="margin-bottom:2px;">
+		<ul class="nav ml-auto">
+			<li class="mobicon p-2" style="margin-left:150px;">
+				<i class="fa-solid fa-phone fa-xs" ></i>
+				Call Us:<a href="tel:+91 9866477505" class="mob" >+91 9866477505 </a>
+			</li>
+				<span style="font-size:20px;color:white"><b>|</b></span>
+			<li class="mobicon p-2">
+				<i class="fa-brands fa-whatsapp" style="margin-left:2px;"></i>
+				WhatsApp:<a href="#" target="_blank" class="mob">+91 8688291819</a>
+			</li>
+			<li class="mobicon p-2">
+				<i class="fa-regular fa-envelope"  style="margin-left:250;"></i>
+				Email:<a href="mailto:bsasikarthik191@gmail.com" target="_blank" class="mob">wearhug@gmail.com</a>
+			</li>
+			<li class="searchbox">
+				<input type="text" placeholder="Search..." name="search">
+				<span style="padding-right:8;"><a href="#" class="btn fa fa-search"></a><span>
+			</li>
+		</ul>
+  	</nav>
+	<!-- Navbar bigscreen End-->
+	
+	<!-- Navbar small srceen-->
+	<nav class=" navbar nav-bg navhide1 navbar-expand-sm " style="margin-bottom:2px;">
+		<a class="navbar-brand " href="index.html"><img src="./images/logo1.png" style="width:100%;height: 20px;"></a>
+		<ul class="nav ml-auto" >
+			<li class="mobicon ml-auto mr-1 wp" >
+				<a href="tel:+91 9866477505" class="fa-solid fa-phone fa-xs" style="color:white;"></a>
+			</li>
+			<li class="mobicon ml-auto mr-1 wp">
+				<a class="fa-brands fa-whatsapp" style="color:white;"></a>
+			</li>
+			<li class="mobicon ml-auto mr-1  wp">
+				<a href="https://www.instagram.com/wearhug_partystudio/" class="fa-brands fa-instagram " style="color:white;"></a>
+			</li>
+			<li class="mobicon ml-auto mr-1 wp">
+				<a href="mailto:bsasikarthik191@gmail.com" class="fa-regular fa-envelope"  style="color:white;"></a>
+			</li>
+			<!-- <li class="searchbox1 m-2"> 
+				<input type="text" placeholder="Search..." name="search">
+				<span style="padding-right:8;"><a href="#" class="btn fa fa-search"></a><span>
+			</li>-->
+			<button id="main" class="openbtn" onclick="openNav()" ><i class="fa-solid fa-bars fa-lg"></i></button>  
+		</ul>
+  </nav>
+
+
+  <div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<li class="nav-item">
+		<a class="nav-link  activee" href="index.html" >Home</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" >SERVICES  <i class="fa-solid fa-caret-down"></i></a>
+		<a class="nav-link" href="Traditional Backdrops.html">Traditional Backdrops</a>
+		<a class="nav-link"  href="BanquetHall.html">Banquet Hall Decorations</a>
+		<a class="nav-link"  href="Indoor Birthday Decorations.html">Indoor Home Decorations</a>
+		<a class="nav-link"  href="Rentals.html">Rentals</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link " href="gallery.html">Gallery</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link " href="About.html">About</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link " href="Contact.html">Contact</a>
+	</li>
+  </div>
+  
+  
+<script>
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+	}
+	</script>
+	<!-- Navbar smalll screen End-->
+	
+
+	<!-- Main Navigationbar-->
+	<nav class="navbar navhide2 navbar-expand-xl nav-bg1 border-bottom sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand " href="index.html"><img src="./images/logo1.png" style="width:50px;"></a>
+				<ul class="nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link navtext  activee" href="index.html" >Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle navtext" >Services</a>
+						<div class="dropdown-content ">
+							<a class="dropdown-item " href="Traditional Backdrops.html">Traditional Backdrops</a>
+							<a class="dropdown-item " href="BanquetHall.html">Banquet Hall Decorations</a>
+							<a class="dropdown-item " href="Indoor Birthday Decorations.html">Indoor Home Decorations</a>
+							<a class="dropdown-item " href="Rentals.html">Rentals</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link navtext" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link navtext" href="About.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link navtext" href="Contact.html">Contact</a>
+					</li>
+					<li class="nav-item m-2">
+						<a href="https://www.instagram.com/wearhug_partystudio/" target="_blank" class="social instagram">
+							<svg viewBox="0 0 246.15 246.15"><path d="M201,51.5A47.49,47.49,0,0,1,248.41,99V200.88A47.49,47.49,0,0,1,201,248.32H99a47.49,47.49,0,0,1-47.44-47.44V99A47.49,47.49,0,0,1,99,51.5H201m0-24.66H99A72.11,72.11,0,0,0,26.92,99V200.88A72.12,72.12,0,0,0,99,273H201a72.12,72.12,0,0,0,72.11-72.11V99A72.11,72.11,0,0,0,201,26.84Z" transform="translate(-26.92 -26.84)"/><path class="cls-1" d="M150,124.34a25.57,25.57,0,1,1-25.57,25.57A25.6,25.6,0,0,1,150,124.34m0-24.66a50.24,50.24,0,1,0,50.23,50.23A50.23,50.23,0,0,0,150,99.68Z" transform="translate(-26.92 -26.84)"/><circle class="cls-1" cx="189.98" cy="55.33" r="13.81"/></svg>	
+						</a>
+					</li>
+					<li class="nav-item m-2">
+						<a href="" class="social facebook">
+							<svg viewBox="0 0 126.22 246"><path d="M173.6,27h35.92V70.19h-29.7c-15,2.39-14,19.79-14,19.79v29.33h47.27l-7.05,47.52H166.33V273H119.19V166.09H86.89V119.31h32.3V87.74A68.5,68.5,0,0,1,127,55.49c5.27-9.87,14-20.18,28.41-25.47A53,53,0,0,1,173.6,27Z" transform="translate(-86.89 -27)"/></svg>
+						</a>
+					</li>
+					<li class="nav-item m-2">
+						<a class="book-now btn" href="tel:+91 9866477505"><i class="fa-solid fa-phone fa-xs"></i> Book Now</a>
+					</li>
+				</ul>
+		</div>
+	</nav>
+	<!-- navigationbar end-->
+
+
+	<!-- Fixed social mdeia -->
+	<div class="icons position-fixed" data-aos="zoom-in">
+		<ul>
+			<a href="7893505080"><li class="whatsapp1"><i class="fa-brands fa-whatsapp"></i></li></a>
+			<a href="https://www.instagram.com/wearhug_partystudio/"><li class="instagram1"><i class="fa-brands fa-instagram"></i></li></a>
+			<a href="#"><li class="facebook1"><i class="fa-brands fa-facebook"></i></li></a>
+		</ul>
+	</div>
+	<!-- Fixed social mdeia end-->
+
+	<!-- welcome-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 " data-aos="zoom-in">
+				<div class="row d-flex justify-content-center">
+					<img src="images/w.jpg" class="img-fluid welcome" >
+				</div> 
+				<div class="row d-flex justify-content-center">
+				<p class="navhide2" style="font-size:28px;font-family:gothicb;padding-left:30px;"><b>“Making your event a once-in-a-lifetime experience...”</b></p>
+				</div>
+				<div class="row d-flex justify-content-center">
+				<p class="navhide1" style="font-size:28px;font-family:gothicb;"><b>“Celebrating Togetherness...”</b></p></div>
+				<div class="row d-flex justify-content-center">
+					<a class="booknowcall btn m-2" href="#"><i class="fa-solid fa-phone fa-xs"></i> Book A Call</a>
+					<a class="booknowcall btn m-2" data-toggle="modal" data-target="#exampleModal"><i class="fa-regular fa-envelope"></i> Enquiry</a>
+				</div> 
+			</div> 
+			<div class="col-lg-6" data-aos="zoom-in">
+				<div class="row">
+					<img src="images/bg.png" class="img-fluid ">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- welcome end --> 
+	
+	<!--carousel-->
+	<div class="container card d-flex justify-content-center service1"  data-aos="fade-right" style="margin-bottom:50px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card-body">
+					<h1 style="font-size:25px;"><b>“Creating a stage where memories are made and stories are shared is the essence of event management...”</b></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="containe-fluid carousel-fade m-2 d-flex justify-content-center"  >
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="carousel-img" class="img-fluid" src="images/car1.png" alt="Home Birthday Decoration">
+					<div class="carousel-caption">
+						<h2 style="font-size: 2vw;">Banquet Hall Decorations</h2>
+					</div>   
+				</div>
+				<div class="carousel-item carousel-img">
+				  <img class="carousel-img" class="img-fluid" src="images/car2.png" alt="Home Birthday Decoration">  
+				</div>
+				<div class="carousel-item carousel-img">
+					<img class="carousel-img" class="img-fluid" src="images/car3.png" alt="Home Birthday Decoration">  
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+			</div>
+		</div>
+	<!--carousel ends -->
+	
+	<!-- service cards -->
+	<div class="container card d-flex justify-content-center service "  data-aos="zoom-in" style="margin-top: 50px;">
+		<div class="row">
+			<div class="card-body">
+				<h1 style="font-size:45px;font-weight:bold;font-family:gothicb;">OUR SERVICES</h1>
+				<h6 style="font-size:25px;"><b>“What you need, is an Event, to remember for a lifetime”</b></h6>
+			</div>
+		</div>
+	</div>
+
+		<div class="container  bg-light" style="margin-top:30px;"  data-aos="zoom-in" style="margin-bottom: 30px;">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card m-2" >
+						<div class="card-body" >	
+							<h4 class="servicetext" style="text-align:center;">Traditional</h4>
+							<h4 class="servicetext" style="text-align:center;color:#03e3fc;">Backdrops</h4>
+							<img src="images/backdrop.jpg" class="rounded " alt="Home Birthday Decoration" style="width:100%;" >
+						</div>	
+							<a class="booknowcall btn m-2" href="Traditional Backdrops.html">Click Here</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card  m-2" >
+						<div class="card-body">	
+							<h4 class="servicetext" style="text-align:center;">Banquet Hall</h4>
+							<h4 class="servicetext" style="text-align:center;color:#03e3fc;">Decorations</h4>
+							<img src="images/banquet.jpg" class="rounded img-fluid" alt="Banquet Hall Decoration" style="width:100%;">
+						</div>
+						<a class="booknowcall btn m-2" href="BanquetHall.html">Click Here</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card  m-2" >
+						<div class="card-body">	
+							<h4 class="servicetext" style="text-align:center;">Indoor Birthday</h4>
+							<h4 class="servicetext" style="text-align:center;color:#03e3fc;">Decorations</h4>
+							<img src="images/indoor.jpg" class="rounded img-fluid" alt="Indoor Birthday Decoration" style="width:100%;" >
+						</div>
+						<a class="booknowcall btn m-2" href="Indoor Birthday Decorations.html">Click Here</a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card  m-2" >
+						<div class="card-body">	
+							<h4 class="servicetext" style="text-align:center;">Rental</h4>
+							<h4 class="servicetext" style="text-align:center;color:#03e3fc;">Items</h4>
+							<img src="images/rental2.png" class="rounded img-fluid" alt="Rental Decoration" style="width:100%;" >
+						</div>
+						<a class="booknowcall btn m-2" href="Rentals.html">Click Here</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- service cards ends -->
+
+	<!-- banner 1 start-->
+		
+<div class="containerbanner" data-aos="zoom-in">
+	<img src="images/bn1.jpg" alt="banner" style="width:100%;">
+	<div class="centered">
+		<h1>“Indoor Party<br> Decors”</h1>
+		<p>Give your guests a reason to stare...</p>
+		<a class="m-2" data-toggle="modal" data-target="#exampleModal" type="Button">Enquiry</a>
+	</div>
+</div>
+	<!--  banner 1 end-->
+	
+	<!-- services price-->
+	<div class="container card d-flex justify-content-center service1"  data-aos="fade-right" style="margin-top: 30px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card-body">
+					<h1 style="font-size:25px;"><b>“We’ll make your celebration memorable”</b></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid d-flex justify-content-center" style="margin-top:30px;" data-aos="zoom-in">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="row d-flex justify-content-center m-2">
+					<img src="images/td2.jpg" title="2 Light green fabric curtains,
+2 Yellow soft fabric curtains,
+2 Green printed curtains,
+3 Kites" class="img-thumbnail img-fluid" alt="backdrop" width="280">
+			</div>
+				<div class="row d-flex justify-content-center">
+					<h5>Yellow & Green Backdrop</h5>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<p><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row d-flex justify-content-center m-2">
+					<img src="images/td2.jpg" title="2 Light green fabric curtains,
+2 Yellow soft fabric curtains,
+2 Green printed curtains,
+3 Kites" class="img-thumbnail img-fluid" alt="backdrop" width="280">
+			</div>
+				<div class="row d-flex justify-content-center">
+					<h5>Yellow & Green Backdrop</h5>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<p><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row d-flex justify-content-center m-2">
+					<img src="images/td3.jpg" title="2 Light green fabric curtains,
+2 Yellow soft fabric curtains,
+2 Green printed curtains,
+3 Kites" class="img-thumbnail img-fluid" alt="backdrop" width="280">
+			</div>
+				<div class="row d-flex justify-content-center">
+					<h5>Yellow & Green Backdrop</h5>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<p><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row d-flex justify-content-center m-2">
+					<img src="images/td4.jpg" title="2 Light green fabric curtains,
+2 Yellow soft fabric curtains,
+2 Green printed curtains,
+3 Kites" class="img-thumbnail img-fluid" alt="backdrop" width="280">
+			</div>
+				<div class="row d-flex justify-content-center">
+					<h5>Yellow & Green Backdrop</h5>
+				</div>
+				<div class="row d-flex justify-content-center">
+					<p><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid d-flex justify-content-center" style="margin-top:30px;" data-aos="zoom-in">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="row row d-flex justify-content-center m-2">
+					<img src="images/r1.png" class="img-thumbnail img-fluid" alt="backdrop" width="300" height="300">
+				</div>
+				<div class="row d-flex justify-content-center">
+					<h5>A-Z led Letters</h5>
+				</div>
+				<div class="row row d-flex justify-content-center">
+					<p ><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row row d-flex justify-content-center m-2">
+					<img src="images/r2.png" class="img-thumbnail img-fluid" alt="backdrop" width="300" height="300">
+				</div>
+				<div class="row d-flex justify-content-center">
+					<h5>0-9 led Letters</h5>
+				</div>
+				<div class="row row d-flex justify-content-center">
+					<p ><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row row d-flex justify-content-center m-2">
+					<img src="images/r3.png" class="img-thumbnail img-fluid" alt="backdrop" width="300" height="300">
+				</div>
+				<div class="row d-flex justify-content-center">
+					<h5>Ballon Inflator</h5>
+				</div>
+				<div class="row row d-flex justify-content-center">
+					<p ><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row row d-flex justify-content-center m-2">
+					<img src="images/r4.png" class="img-thumbnail img-fluid" alt="backdrop" width="300" height="300">
+				</div>
+				<div class="row d-flex justify-content-center">
+					<h5>Foam Boards</h5>
+				</div>
+				<div class="row row d-flex justify-content-center">
+					<p ><s>₹3700</s>&nbsp;&nbsp;₹2800</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- services price end -->
+	
+	<!-- gallery bigscreen start -->
+	<div data-aos="zoom-in">
+		<div class="card container d-flex justify-content-center service" style="margin-top: 50px;margin-bottom: 30px;">
+			<div class="card-body">
+				<h1 style="font-size:45px;font-weight:bold;font-family:gothicb;">OUR GALLERY</h1>
+				<h6 class="navhide2" style="font-size:25px;"><b>“Take a look at our past work to appreciate expertise with clasic decor ideas”</b></h6>
+			</div>
+		</div>
+	</div>
+
+		<div class="container bg-light gallerybig" >
+			<div class="row" data-aos="fade-left">
+				<div class="col-md-3">
+					<img  src="images/img1.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+				<div class="col-md-3">
+					<img src="images/img2.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+				<div class="col-md-3">
+					<img src="images/img3.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%">
+				</div>
+				<div class="col-md-3">
+					<img src="images/img4.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+			</div>
+			<div class="row" style="margin-top: 20px;margin-bottom: 30px;" data-aos="fade-right">
+				<div class="col-md-3">
+					<img src="images/img5.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+				<div class="col-md-3">
+					<img src="images/img6.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+				<div class="col-md-3">
+					<img src="images/img7.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+				<div class="col-md-3">
+					<img src="images/img8.jpg" alt="Image" onclick="openModal();currentSlide(1)" class="imgh img-fluid img-thumbnail" max-width="100%" >
+				</div>
+			</div>
+		</div>
+	
+		
+		<div id="myModal" class="modal modalbg" >
+			<a  class="close btn btn-light" onclick="closeModal()">close</a>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="images/img1.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="images/img2.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="images/img3.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="images/img4.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="images/img5.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="images/img6.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">7/ 8</div>
+					<img src="images/img7.jpg" class="img-thumbnail" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="images/img8.jpg" class="img-thumbnail"style="width:100%">
+				</div>
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+		</div>
+		  
+		  <script>
+		  function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		  }
+		  
+		  function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		  }
+		  
+		  var slideIndex = 1;
+		  showSlides(slideIndex);
+		  
+		  function plusSlides(n) {
+			showSlides(slideIndex += n);
+		  }
+		  
+		  function currentSlide(n) {
+			showSlides(slideIndex = n);
+		  }
+		  
+		  function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		  }
+		  </script>
+	
+	<!-- gallery bigscreen end -->
+
+	<!-- gallery small screen -->
+
+	  <div class="modal-content gallerysmall">
+		<div class="mySlides1">
+			<div class="numbertext">1 / 8</div>
+			<img src="images/img1.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+	
+		<div class="mySlides1">
+			<div class="numbertext">2 / 8</div>
+			<img src="images/img2.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+	
+		<div class="mySlides1">
+			<div class="numbertext">3 / 8</div>
+			<img src="images/img3.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+		<div class="mySlides1">
+			<div class="numbertext">4 / 8</div>
+			<img src="images/img4.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+		<div class="mySlides1">
+			<div class="numbertext">5 / 8</div>
+			<img src="images/img5.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+	
+		<div class="mySlides1">
+			<div class="numbertext">6 / 8</div>
+			<img src="images/img6.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+	
+		<div class="mySlides1">
+			<div class="numbertext">7/ 8</div>
+			<img src="images/img7.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+		
+		<div class="mySlides1">
+			<div class="numbertext">8 / 8</div>
+			<img src="images/img8.jpg" class="img-thumbnail" max-width="100%">
+		</div>
+	  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+	</div>
+	<script>
+	var slideIndex1 = 1;
+	showSlides1(slideIndex1);
+	
+	function plusSlides1(n) {
+	  showSlides1(slideIndex1 += n);
+	}
+	
+	function currentSlide1(n) {
+	  showSlides1(slideIndex1 = n);
+	}
+	
+	function showSlides1(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides1");
+	  var dots = document.getElementsByClassName("demoo");
+	  var captionText = document.getElementById("caption1");
+	  if (n > slides.length) {slideIndex1 = 1}
+	  if (n < 1) {slideIndex1 = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex1-1].style.display = "block";
+	  dots[slideIndex1-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex1-1].alt;
+	}
+	</script>
+	<p class="d-flex justify-content-center p-2" style="margin-bottom:30px;"><a class="booknowcall btn " href="gallery.html">View More</a></p>
+
+<!-- gallery smallscreen end -->
+
+	<!-- banner 2 start-->
+	<div class="containerbanner2" data-aos="zoom-in">
+		<img src="images/ban3.jpg" alt="banner" style="width:100%;">
+		<div class="centered2">
+			<h1>“MANY THEMED DECORATIONS”</h1>
+				<p>Making events that are simply unforgettable</p>
+			<a class="m-2" data-toggle="modal" data-target="#exampleModal" type="Button">Enquiry</a>
+		</div>
+	</div>
+		<!-- banner 2 end-->
+
+	 <!-- TESTIMONIALS START-->
+	
+		<div class="card container d-flex justify-content-center service"  data-aos="zoom-in" style="margin-top: 50px;">
+			<div class="card-body">
+				<h1 style="font-size:38px;font-weight:bold;font-family:gothicb;">TESTIMONIALS</h1>
+				<h6 style="font-size:25px;"><b>“Reviews from our beloved and happy customers”</b></h6>
+			</div>
+		</div>
+
+		<section id="testimonial_area" class="section_padding"  data-aos="zoom-in" style="margin-top: 30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="testmonial_slider_area text-center owl-carousel">
+							<div class="box-area">										
+								<p class="content txt scroll">
+									“We had a best experience with the team. They did a great work by fulfilling
+									requirement for our son’s birthday event. We were extremely satisfied with the work the team has done . 
+									Thank you wearhug! Looking forward to choose and refer you for all the future
+									 events to our near and dear as well. Wish you all the success..”
+								</p>
+								<h5 class="float-right">-Jyothirmai B</h5>
+							</div> 
+							<div class="box-area">										
+								<p class="content txt scroll">
+									“I was looking for a unique wall decor for my room. I have reached out to wearhug partystudio, 
+									they clearly understood my requirement and took 2 days to customize the art.
+									 I was really amazed by their paper craft work. It looks really good on the wall. 
+									 Thanks to wearhug..”
+								</p>
+								<h5 class="float-right">-Murali Arepalli</h5>
+							</div>
+							<div class="box-area">					
+								<p class="content txt scroll">
+									“We Just Asked Them We Need Party style  Decoration and They Have Done Their Work Very efficiently ,
+									We Neither Provided any Sample images ,They Visited our Store They Decided what to Do And 
+									They managed to Complete Every Decor Within the  time.
+									Loved WearHug's Professionalism..”
+								</p>
+								<h5 class="float-right">-Tastea Coffee</h5>
+							</div> 
+							<div class="box-area">			
+								<p class="content txt scroll">
+									“When I visit the store, I was in a rush & explained that I don’t need the balloons theme🙆🏻‍♀️.
+									 They Calmly gave me plenty ideas, and helped me to choose things. 
+									 Prices are very affordable thanks a ton my sister birthday was successful🤩..”
+								</p>
+								<h5 class="float-right">-Haarshita Harsha</h5>
+							</div>
+							<div class="box-area">				
+								<p class="content txt scroll">
+									“It was an amazing experience to choose wearhug party  decorations and events  for 
+									our little prince first birthday.. They gave us with variety of 
+									options to choose the decor and were also given a chance to go 
+									for customization of our choice , the staff is very polite. 
+									We are very much saticified with the decoration .. all the very best.
+									 keep going..👍👍”
+								</p>
+								<h5 class="float-right">-Pramodreddy Thimmanna</h5>
+							</div> 
+							<div class="box-area">		
+														
+								<p class="content txt scroll">
+									“First of all, Thank you so much for making the decoration more than beautiful.. 
+									I was thinking of a ice cream and doughnut theme for my daughter's 5th birthday and
+									 I even asked them for a customization. They listened patiently and the staff is so polite. 
+									 The output was beyond my expectations..
+									The prices were also affordable!! Thank you Wearhug team for making the event successful..”
+								</p>
+								<h5 class="float-right">-Nirmala Kumari</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container d-flex justify-content-center ">
+					<a class="btn-primary btn m-2" href="https://www.google.com/search?hl=en-IN&gl=in&q=Shop+1,+Plot+No.+159/A,+WearHug+Party+Decorations+%26+Events,+Srinivas+Towers,+Addagutta,+Western+Hills,+Jal+Vayu+Vihar,+Kukatpally,+Hyderabad,+Telangana+500072&ludocid=14113477505289075172&lsig=AB86z5UslbOclRXoZGXt962peJhy#lrd=0x3bcb912989e803e9:0xc3dd2503c038b9e4,3,,,," target="_blank"> WRITE A REVIEW</a>
+					<a class="btn-primary btn m-2" href="https://www.google.com/search?hl=en-IN&gl=in&q=Shop+1,+Plot+No.+159/A,+WearHug+Party+Decorations+%26+Events,+Srinivas+Towers,+Addagutta,+Western+Hills,+Jal+Vayu+Vihar,+Kukatpally,+Hyderabad,+Telangana+500072&ludocid=14113477505289075172&lsig=AB86z5UslbOclRXoZGXt962peJhy#lrd=0x3bcb912989e803e9:0xc3dd2503c038b9e4,1" target="_blank"> VIEW MORE</a>
+				</div>
+				
+			</div>
+		</section>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<script>
+	$(".testmonial_slider_area").owlCarousel({
+			autoplay: true,
+			slideSpeed:1000,
+			items : 3,			navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+			margin: 30,
+			dots: true,
+
+			loop: true,
+			nav:true,
+			responsive:{
+				320:{
+					items:1
+				},
+				767:{
+					items:2
+				},
+				600:{
+					items:2
+				},
+				1000:{
+					items:3
+				}
+			}
+			
+		});
+</script>
+<!-- TESTIMONIALS END -->
+
+
+	 <!-- footer -->
+	<footer class="site-footer" style="margin-top: 10px;"  data-aos="zoom-in" style="margin-top: 50px">  
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-2 ">
+					<img class="footerimg" src="images/logo1.png"  alt="logo" >
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<h6>About</h6>
+					<p class="text-justify">Abouut section</p>
+				</div>
+	
+				<div class="col-xs-6 col-md-2">
+					<h6>Categories</h6>
+					<ul class="footer-links">
+						<li><a href="Indoor Birthday Decorations.html">Indoor Birthday Decorations</a></li>
+						<li><a href="BanquetHall.html">Banquet Hall Decorations</a></li>
+						<li><a href="Traditional Backdrops.html">Traditional Backdrops</a></li>
+						<li><a href="Rentals.html">Rentals</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-xs-6 col-md-2">
+					<h6>Our Address</h6>
+						<ul class="footer-links">
+						<li>
+							<i class="fa-solid fa-map-location-dot fa-sm"></i>
+							<a href="" title="click for directions">:Shop 1, Plot No. 159/A,<br> Srinivas Towers
+						Addagutta, <br>Western Hills, Kukatpally,<br>
+						Hyderabad, Telangana 500072
+						</a></li>
+						<li>
+							<i class="fa-solid fa-phone fa-sm" ></i>
+							:<a href="tel:+91 9866477505">+91 9866477505 </a>
+						</li>	
+						<li>
+							<i class="fa-regular fa-envelope fa-sm"></i>
+							:<a href="mailto:bsasikarthik191@gmail.com" target="_blank" >wearhug@gmail.com</a>
+						</li>
+				</div>
+				<div class="col-xs-6 col-md-2">
+					<h6 class="justify-content-center d-flex">Developed by</h6>
+					<div class="row justify-content-center d-flex">
+						<ul class="justify-content-center" style="margin-top: 5px;color: rgb(215, 218, 218);">
+							<li>SASI KARTHIK BEZAWADA</li>
+							<li>MD SALMAN SHAIK</li>
+						</ul>
+					</div>
+					<div class="row justify-content-center d-flex">
+						<img src="images/telstalogo.jpg" alt="telsta logo" style="max-width: 100%;height:45px;">
+					</div>
+					</div>
+				</div>
+			</div>
+		  <hr>
+		</div>
+		<div class="container-fluid">
+		  	<div class="row d-flex justify-content-center">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">Copyright &copy;All Rights Reserved by 
+		 			 	<a href="index.html">Wearhug</a>.
+			 		</p>
+					
+				</div>
+		  	</div>
+		</div>
+  </footer>
+  <!--footer ends -->
+
+	<!-- Scroll animation start-->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
+	<!-- Scroll animation end-->
+  
+
+  <!-- Modal button-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header color">
+		  <h3 class="modal-title" id="exampleModalLabel">WearHug Partystudio Hyderabad</h3>
+		</div>
+		<div class="modal-body color">
+			<form id="myForm" action="https://formspree.io/f/xvojrrwn" method="POST">
+				<div class="form-group">
+					<label for="name">Name*</label>
+					<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+				</div>
+				<div class="form-group">
+					<label for="contact num">Contact No*</label>
+					<input type="number" class="form-control" name="number" id="contactno" placeholder="Contact No" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email*</label>
+					<input type="email" class="form-control" name="email" id="email" placeholder="email" required>
+				</div>
+				<div class="form-group">
+					<label for="Message">Message*</label>
+					<input type="text" class="form-control" name="message" id="Message" placeholder="what you are looking for" required>
+				</div>
+				<button type="submit" class="btn m-2 btn-primary float-right">Send</button>
+				<button type="button" class="btn m-2 btn-dark float-right" data-dismiss="modal">Close</button>
+			</form>
+		</div>
+	  </div>
+	</div>
+  </div>
+	<!-- Modal button end -->
+	
+	</body>
+</html>
